@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/*
+Pelo oq eu entendi até o momento esses coamndo só funcionarão caso seja implementada na tag pai
+
+display: flex| é quem nos permite posicionar os elementos na tela da forma que desejamos 
+
+flex-direction| esse comando serve para dar o direcionamento para um elemento, podendo ser um 
+row(linha) ou uma colum(coluna)
+
+flex-wrap: wrap| faz com que quando os elementos não caibam mais no sentido vertical eles criem fileiras abaixo,
+sempre respeitando a proporção do elemento e o tamanho da tela 
+
+                                            [[[justify-content:]]]
+[Eixo: Y para Column = Cima e baixo, start para cima e end para baixo]
+[Eixo: X para Row = Esquerda e direita para os elementos, start esquerda e end direita]
+justify-content: | (justificar o conteudo) ele possue diversas propriedade, sua função é posicionar os elementos
+(posicionamento entre os próprios elementos) 
++space-between| Ele vai pegar e dar o maior espaço possivel entre os elementos 
++space-evenly| Já esse comando ele vai dar o mesmo espaço entre os elementos, dando um espaço inicial do canto da
+tela pro primeiro elemento e pro último
++space-around| Semelhante ao útima propriedade ele vai gerar espaço iguais entre os elementos, porém o espaço que
+ele dará no canto da tela pro primeiro elemento e pro último será o equivalente a metade do espaço que ele deu 
+entre os elementos 
++center| ele centraliza os elementos
++flex-start| Ele é a propriedade básica do display flex, ele fará com os elemtos comecem da esquerda para a direta 
+caso seja uma linha(row) ou de cima para baixo caso seja uma colum(coluna), ele não modifica a distancia entre os
+elementos
++flex-end| Ele é o oposto do comando anterior, ele fará com que com que os elemtos fiquem no fim da tela, 
+no caso da direita para a esquerda, não é compatível com as colunas(colum), apenas com linha(row)
+
+                                            [[[align-items:]]]
+[Eixo: X para Column = Esquerda e direita para os elementos, start esquerda e end direita]
+[Eixo: Y para Row = Cima e baixo, start para cima e end para baixo]
+align-items: | ele possue diversas propriedade, sua função é posicionar os elementos em relação ao bloco/tela que 
+estiver
++center;| Ele irá centralizar os elemtos que estão dentro dele (lembrando, esse atributo é usada dentro da tag
+pai), caso seja em uma linha(row) ela ficará no centro entre cima e baixo, já em uma coluna(colum) os elemetos ficarão 
+no centro em relação aos lados 
+                                             
++flex-start| Fará com que o elemento fique em cima no canto esquerdo em cima em relação ao bloco
++flex-end| Fará com que os elementos fique no fim do bloco (embaixo) caso seja uma linha(row) e caso seja uma
+coluna(colum) ele ficará no canto da direita 
+
+*/
+        .container {           
+            display: flex; 
+            flex-direction: column;
+            justify-content: space-between;
+            background: blue;
+            height: 300px;
+            align-items: flex-start;
+        }
+
+        .elemento {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 1px solid black;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">     
+        <div class="elemento">
+            div elemento
+        </div>
+        <div class="elemento">
+            div elemento2
+        </div>
+    </div>  
+</body>
+</html>

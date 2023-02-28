@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #03001C, #301E67, #5B8FB9, #B6EADA);
+    font: normal 15pt Arial ;
+    color: white;
+    background-size: 100%;
+}
+
+header {
+ text-align: center;
+ padding-top: 30px;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    color: #03001C;
+    box-shadow: 4px 5px 8px rgb(27, 1, 1);
+    margin-top: 90px;
+}
+
+div {
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+ text-align: center;
+ font-style: italic;
+ padding-top: 130px;
+}
